@@ -200,7 +200,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
   );
 
   final confirmpasswordContiner = _textfieldContainer(
-    controller: passwordController,
+    controller: confirmpasswordController,
     keyboardtype: TextInputType.visiblePassword,
     icon: Icon(
       Icons.lock,
@@ -328,7 +328,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
       alignment: Alignment.center,
     );
 
-    final loginButon = Container(
+    final signupButon = Container(
       padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
       child: RaisedButton(
         textColor: Colors.white,
@@ -387,7 +387,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       confirmpasswordContiner
                     ],
                   ),
-                  loginButon,
+                  signupButon,
                 ],
               ),
             ),

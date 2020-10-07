@@ -1,5 +1,6 @@
 import 'package:cleanto/glob.dart' as global;
 import 'package:cleanto/view/forgotpassword/forgotpasswordpage.dart';
+import 'package:cleanto/view/home/home.dart';
 import 'package:cleanto/view/registration/registration.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -221,7 +222,7 @@ class _LoginPageState extends State<LoginPage> {
       alignment: Alignment.topLeft,
     );
 
-    final loginButon = Container(
+    final loginButton = Container(
       padding: EdgeInsets.fromLTRB(0, 20, 0, 30),
       child: RaisedButton(
         textColor: Colors.white,
@@ -277,12 +278,12 @@ class _LoginPageState extends State<LoginPage> {
 //                    );
 //                    getStringValuesSF();
 
-//                    Navigator.push(
-//                      context,
-//                      MaterialPageRoute(
-//                        builder: (context) => Dashboard(),
-//                      ),
-//                    );
+                   Navigator.push(
+                     context,
+                     MaterialPageRoute(
+                       builder: (context) => HomePage(),
+                     ),
+                   );
 //                  }
 //                } else {
 //                  Fluttertoast.showToast(
@@ -335,7 +336,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   forgetpasswordtext,
                   remebercheckbox,
-                  loginButon,
+                  loginButton,
                 ],
               ),
             ),
